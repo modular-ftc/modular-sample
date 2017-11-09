@@ -65,15 +65,8 @@ dependencies {
     implementation "com.github.modular-ftc:ftc-common-repackaged:$ftc_version.0-lite"
 
     implementation "org.first.ftc:hardware:$ftc_version"
-    implementation "org.first.ftc:analytics:$ftc_version"
-    implementation "org.first.ftc:wireless-p2p:$ftc_version"
-    implementation "com.github.modular-ftc:vuforia-repackaged:$ftc_version.0"
 
     //The Pattonville Robotics shared libraries are included by default. Remove the following line to stop using them.
-    implementation "com.github.Pattonville-Robotics:Common-Code:d9d0d5e56f", {
-        exclude group: 'com.github.modular-ftc', module: 'robotcore-repackaged'
-        exclude group: 'com.github.modular-ftc', module: 'robotcontroller-repackaged'
-        exclude group: 'org.first.ftc', module: 'ftc-common'
-    }
+    implementation "com.github.Pattonville-Robotics:Common-Code:ce72e05"
 }
 
