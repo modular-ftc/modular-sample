@@ -14,4 +14,8 @@
 -dontwarn com.google.gson.**
 -dontwarn com.google.errorprone.**
 -dontwarn com.qualcomm.analytics.**
+-dontwarn com.qualcomm.wirelessp2p.**
+-dontwarn com.osterhoutgroup.**
 -dontwarn org.apache.commons.math3.geometry.euclidean.twod.Line
+-dontwarn org.checkerframework.**
+-dontwarn afu.org.checkerframework.**
