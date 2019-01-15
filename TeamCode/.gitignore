@@ -135,6 +135,21 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+### Gradle template
+.gradle
+/build/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
+# gradle/wrapper/gradle-wrapper.properties
 ### Kotlin template
 # Compiled class file
 *.class
@@ -239,18 +254,4 @@ fastlane/readme.md
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-### Gradle template
-.gradle
-/build/
 
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
-
-# Cache of project
-.gradletasknamecache
-
-# # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
-# gradle/wrapper/gradle-wrapper.properties
