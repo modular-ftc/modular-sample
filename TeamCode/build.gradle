@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 23
 
     signingConfigs {
         debug {
@@ -16,7 +16,8 @@ android {
     defaultConfig {
         applicationId 'com.qualcomm.ftcrobotcontroller'
         minSdkVersion 19
-        //noinspection OldTargetApi Needed to allow Camera access silently
+        // Needed to allow Camera access silently
+        // noinspection ExpiredTargetSdkVersion
         targetSdkVersion 19
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -58,11 +59,12 @@ dependencies {
     //Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    //FTC libraries
+    //Repackaged FTC libraries
     implementation "com.github.modular-ftc:robotcontroller-repackaged:$ftc_version.1-lite"
     implementation "com.github.modular-ftc:robotcore-repackaged:$ftc_version.0-lite"
     implementation "com.github.modular-ftc:ftc-common-repackaged:$ftc_version.0-lite"
 
+    //Original FTC libraries
     implementation "org.first.ftc:hardware:$ftc_version"
 
     //The Pattonville Robotics shared libraries are included by default. Remove the following line to stop using them.
