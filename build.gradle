@@ -1,6 +1,6 @@
 buildscript {
-    ext.kotlin_version = '1.2.61'
-    ext.ftc_version = '4.0'
+    ext.kotlin_version = '1.3.11'
+    ext.ftc_version = '4.3'
 
     repositories {
         google()
@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'com.android.tools.build:gradle:3.3.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 
@@ -17,9 +17,7 @@ buildscript {
             jcenter()
             google()
             maven { url 'https://jitpack.io' }
-            maven {
-                url "https://raw.githubusercontent.com/Pattonville-Robotics/ftc-lib-repo/mvn-repo/"
-            }
+            maven { url "https://raw.githubusercontent.com/Pattonville-Robotics/ftc-lib-repo/mvn-repo/" }
         }
     }
 }
