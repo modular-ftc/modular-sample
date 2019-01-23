@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 23
+    compileSdkVersion 28
 
     signingConfigs {
         debug {
@@ -61,7 +61,7 @@ dependencies {
 
     //Repackaged FTC libraries
     implementation "com.github.modular-ftc:robotcontroller-repackaged:$ftc_version.1-lite"
-    implementation "com.github.modular-ftc:robotcore-repackaged:$ftc_version.0-lite"
+    implementation "com.github.modular-ftc:robotcore-repackaged:$ftc_version.1-lite"
     implementation "com.github.modular-ftc:ftc-common-repackaged:$ftc_version.0-lite"
 
     //Original FTC libraries
