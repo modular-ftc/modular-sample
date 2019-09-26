@@ -1,6 +1,6 @@
 buildscript {
-    ext.kotlin_version = '1.3.11'
-    ext.ftc_version = '4.3'
+    ext.kotlin_version = '1.3.41'
+    ext.ftc_version = '5.2'
 
     repositories {
         google()
@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.0'
+        classpath 'com.android.tools.build:gradle:3.5.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 
